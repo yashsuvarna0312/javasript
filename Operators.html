@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    
+    // Arithmetic Operators
+    let x = 10;
+    let y = 5;
+    let sum = x + y;
+   
+    let remainder = x % y;
+    x++; // Increment 'x' by 1
+    y--; // Decrement 'y' by 1
+
+
+    document.write("<hr> "+sum);
+    document.write("<hr> "+ (x-y));
+    document.write("<hr> "+ (x*y));
+    document.write("<hr> "+ (x/y));
+    document.write("<hr> "+ (x%y));
+
+    document.write("<hr> "+ (x++));
+    document.write("<hr> "+ (x--));
+
+    document.write("<hr> "+ (x < y));
+    document.write("<hr> "+ (x < y));
+
+
+    document.write("<hr> "+ (x == y));
+    document.write("<hr> "+ (x != y));
+    document.write("<hr> "+ (x > y));
+    document.write("<hr> "+ (x < y));
+
+
+    // Logical Operators
+
+    // and &&
+
+    // left side | right side | result
+    // true      | true       | true
+    // true      | false      | false
+    // false     | true       | false
+    // false     | false      | false
+
+    document.write("<hr> "+ (x < y && x > y));
+
+    // or ||
+    // left side | right side | result
+    // true      | true       | true
+    // true      | false      | true
+    // false     | true       | true
+    // false     | false      | false
+
+    document.write("<hr> "+ (x < y || x > y));
+
+    // not !
+    // left side | result
+    // true      | false
+    // false     | true
+
+    document.write("<hr> "+ !(x < y));
+
+    // Assignment Operators:
+
+    // =, +=, -=, *=, /=, %=
+
+    a = 10;
+
+    //a = a + 10
+    a += 10;
+    document.write("<hr> "+ a);
+
+    //a = a - 10
+    a -= 10;
+    document.write("<hr> "+ a);
+
+    //a = a * 10
+    a *= 10;
+    document.write("<hr> "+ a);
+
+    //a = a / 10
+    a /= 10;
+    document.write("<hr> "+ a);
+
+    //a = a % 10
+    a %= 10;
+    document.write("<hr> "+ a);
+
+
+</script>
+
+
+</body>
+</html>
