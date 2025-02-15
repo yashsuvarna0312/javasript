@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function login(){
+            var u_name = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+
+            username = "admin";
+            password = "admin";
+
+            if(u_name == username && pass == password){
+                alert("Login Successful");
+                window.location.href = "welcome.html";
+            }else{
+                alert("Login Failed");
+            }
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <br>
+    <button onclick="login()">Login</button>
+</body>
+</html>
