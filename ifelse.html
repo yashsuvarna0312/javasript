@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function Submit(){
+        var number1 = document.getElementById("number1").value;
+        var number2 = document.getElementById("number2").value;
+        number1=+number1;
+        number2=+number2;
+
+       
+
+        if(number1>number2){
+            alert("number1 is greater");
+           
+        }else{
+            alert("number2 is greater");
+        }
+       
+    }
+</script>
+
+</head>
+<body>
+    <label for="number1">Number1:</label>
+    <input type="text" id="number1" name="number1">
+    <br>
+    <br>
+    <label for="number2">Number2:</label>
+    <input type="number2" id="number2" name="number2">
+    <br>
+    <br>
+    <button onclick="Submit()">Submit</button>
+        
+</body>
+</html>
