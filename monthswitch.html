@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function result(){
+            num1=document.getElementById("n1").value;
+            month=document.getElementById("opp").value;
+            printResult=document.getElementById("print_result");
+            switch(month){
+                case'1':printResult.innerHTML= "January";
+                break;
+                case'2':printResult.innerHTML= "February";
+                break;
+                case'3':printResult.innerHTML= "March";
+                break;
+                case'4':printResult.innerHTML= "April";
+                break;
+                case'5':printResult.innerHTML= "May";
+                break;
+                case'6':printResult.innerHTML= "June";
+                break;
+                case'7':printResult.innerHTML= "July";
+                break;
+                case'8':printResult.innerHTML= "August";
+                break;
+                case'9':printResult.innerHTML= "September";
+                break;
+                case'10':printResult.innerHTML= "October";
+                break;
+                case'11':printResult.innerHTML= "November";
+                break;
+                case'12':printResult.innerHTML= "December";
+                break;
+                default:alert("Plz select one")
+            }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <label for="number" id="n1">Number 1</label>
+   
+    
+    <select id="opp">
+        <option selected value="a">Select One</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <button onclick="result()">Get Result</button>
+    <h1> Result:<span id ="print_result"></span></h1>
+</body>
+</html>
