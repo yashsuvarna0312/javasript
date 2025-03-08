@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function result(){
+            num1=document.getElementById("n1").value;
+            num2=document.getElementById("n2").value;
+            operator=document.getElementById("opp").value;
+            printResult=document.getElementById("print_result");
+            switch(operator){
+                case'+':printResult.innerHTML= +num1 + +num2;
+                break;
+                case'-':printResult.innerHTML= num1 - num2;
+                break;
+                case'*':printResult.innerHTML= num1 * num2;
+                break;
+                case'/':printResult.innerHTML= num1 / num2;
+                break;
+                default:alert("Plz select one")
+            }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <label>Number 1</label>
+    <input type="text" id="n1">
+    <select id="opp">
+        <option selected value="a">Select One</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+    </select>
+    <label>Number 2</label>
+    <input type="text" id="n2">
+    <button onclick="result()">Get Result</button>
+    <h1> Result:<span id ="print_result"></span></h1>
+</body>
+</html>
